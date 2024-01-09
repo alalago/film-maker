@@ -1,0 +1,38 @@
+.horizontalblock{
+    display: flex;
+    scrollbar-width: none;  
+    -ms-overflow-style: none; 
+    width: 100vw;
+    overflow: hidden;
+    align-items: flex-start;
+    position:relative;
+    background-color: #fff;
+}
+.horizontalblock img{
+    min-width: 400px ;
+    margin: 20px;
+    max-height: calc(100vh - 40px);
+    object-fit: cover;
+}
+.horizontalblock::-webkit-scrollbar,.innerblock::-webkit-scrollbar {
+    display: none; 
+}
+.innerblock{
+    display: flex;
+    scrollbar-width: none;  
+    -ms-overflow-style: none; 
+}
+.stickyblock{
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+}
+
+@media (max-width: 640px) {
+    .horizontalblock img{
+        min-width: 50vw ;
+        margin: 4vw;
+        max-height: 120vw;
+        object-fit: cover;
+    }
+}

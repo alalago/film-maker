@@ -1,0 +1,14 @@
+header {
+    margin: 23px auto;
+    width: 100%;
+}
+header img{
+    width: 202px;
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 640px){
+
+    
+}
